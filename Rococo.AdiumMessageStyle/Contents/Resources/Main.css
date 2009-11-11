@@ -1,5 +1,23 @@
 html {
-    line-height: 20px;    
+    line-height: 20px;
+}
+
+body {
+    padding: 1em;
+}
+
+#topic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    text-align: center;
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-size: 50%;
+    opacity: 0.9;
+    z-index: 100;
 }
 
 .message {
@@ -8,10 +26,6 @@ html {
 
 .message.history {
     opacity: 0.5;
-}
-
-.message.outgoing {
-    font-style: italic;
 }
 
 .message.consecutive {

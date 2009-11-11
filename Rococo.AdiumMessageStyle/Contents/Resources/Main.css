@@ -1,0 +1,47 @@
+html {
+    line-height: 20px;    
+}
+
+.message {
+    margin: 1em 0 0;
+}
+
+.message.consecutive {
+    margin: 0;
+}
+
+.message.consecutive .t-name {
+    visibility: hidden;
+}
+
+.message .t-time {
+    float: left;
+    width: 5em;
+}
+
+.message .t-name {
+    float: left;
+    width: 10em;
+    text-align: right;
+    overflow: ellipsis;
+}
+
+.message .t-sender {
+    float:left; 
+    width: 1em;   
+}
+
+.message .t-message {
+    margin-left: 16em; 
+    display:block;   
+}
+
+.status, .event {
+    margin: 1em 4em;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 8px;
+    padding: 1em;
+    font-size: 0.75em;
+    line-height: 1;
+}

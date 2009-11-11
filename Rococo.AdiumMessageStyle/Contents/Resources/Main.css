@@ -45,3 +45,7 @@ html {
     font-size: 0.75em;
     line-height: 1;
 }
+
+.mention {
+    background-color: #ff9;    
+}

@@ -22,6 +22,7 @@ body {
 
 .message {
     margin: 1em 0 0;
+    clear: left;
 }
 
 .message.history {
@@ -62,12 +63,14 @@ body {
 
 .status, .event {
     margin: 1em 4em;
-    background-color: #eee;
-    border: 1px solid #ddd;
-    -webkit-border-radius: 8px;
-    padding: 1em;
-    font-size: 0.75em;
-    line-height: 1.2;
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+    clear: left;
+}
+
+.purple {
+    display:none;    
 }
 
 .mention {

@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+  function linkImages(anchor){
+    if(anchor.className && anchor.className.indexOf("touched") != -1) return;
+    if(anchor.href.search(/(\.jpg)|(\.png)|(\.gif)$/) != -1) {
+      anchor.innerHTML = "";
+      var img = document.createElement("img");
+      img.src = anchor.href;
+      anchor.appendChild(img);
+    }
+    anchor.className = (anchor.className || "") + " touched";
+  }
+
+  function fixup(e){
+    var t = e && e.target;
+    console.log("fixup " + t);
+    var c = t.querySelectorAll(".t-message a");
+    console.log("found " + c.length + " matches");
+    for(var i = 0; i < c.length; i++) {
+      linkImages(c[i]);
+    }
+  }
+
+  document.addEventListener("DOMNodeInserted", fixup, false);
+</script>

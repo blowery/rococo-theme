@@ -70,6 +70,10 @@ body {
     vertical-align: absmiddle;
 }
 
+.message .t-message a > img {
+  max-width: 100%;
+}
+
 .status, .event {
     margin: 1em 4em;
     text-align: center;
